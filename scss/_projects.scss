@@ -1,0 +1,110 @@
+.projects {
+    padding-bottom: 2rem;
+    &__bio-image {
+        height: 70vh;
+        width: 99vw;
+        background: linear-gradient(to bottom, rgba($secondary-color, 0.9), rgba($primary-color, 0.3)),
+            url("../images/IMG_20200313_195323.jpg") center;
+        background-size: cover;
+        // background-position: center;
+        text-align: right;
+        background-attachment: fixed;
+        display: flex;
+        flex-direction: column;
+        align-items: right;
+        justify-content: flex-end;
+    }
+
+    .text-secondary {
+        font-size: 2rem;
+        color: $text-color;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    &__items {
+        width: 60vw;
+        margin: 2em auto 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+    }
+    &__item {
+        position: relative;
+        border-bottom: 5px solid $accent-color;
+        overflow: hidden;
+        cursor: pointer;
+        img {
+            width: 100%;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $secondary-color;
+            opacity: 0.8;
+            @include transition-ease;
+        }
+        &:hover {
+            &::after {
+                top: 0;
+                opacity: 0.9;
+            }
+            .projects__btn {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__btns {
+        position: absolute;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        color: $text-color;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        text-align: center;
+        a {
+            color: $primary-color;
+        }
+    }
+    &__btn {
+        opacity: 0;
+        color: set-text-color($text-color);
+        @include transition-ease;
+        &:hover {
+            color: set-text-color(set-text-color($text-color));
+        }
+    }
+}
+
+.social-icons-about {
+    display: flex;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    flex-direction: column;
+    padding-top: 2rem;
+    a {
+        padding: 0.4rem;
+        @include transition-ease;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+.footer-about {
+    transform: rotate(90deg) {
+        translate: (-3rem, -5rem);
+    }
+    right: 0.6rem;
+    bottom: 4rem;
+    right: -2rem;
+}

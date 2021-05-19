@@ -1,0 +1,26 @@
+.home{
+    height: 100%;
+    padding-top: 40vh;
+    overflow: hidden;
+    align-items: center;
+    text-align: center;
+    background:leniar-gradient(
+        to right,
+        rgba($secondary-color,0.9),
+        rgba($secondary-color,0.3)
+         
+    );
+background-size: cover;
+&-name{
+    color: $text-color;
+    font-size: 5rem;
+    padding-bottom: 1rem;
+    margin-top:1rem ;
+    border-bottom: 2px solid set-text-color($primary-color);
+
+&__last{
+    color: $secondary-color;
+    font-weight: 700;
+}
+}
+}

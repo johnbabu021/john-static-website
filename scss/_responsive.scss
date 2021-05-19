@@ -1,0 +1,120 @@
+@include media-md {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateX(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            &__item {
+                display: inline;
+                padding-left: 10rem;
+            }
+            &__link {
+                font-size: 1rem;
+                display: inline;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    .about__bio {
+        margin-left: 5rem;
+        font-size: 1.5rem;
+        color: black;
+    }
+    .projects {
+        &__bio-image {
+            height: 40vh;
+        }
+        &__items {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .text-secondary {
+            font-size: 3rem;
+        }
+    }
+    .contact__list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@include media-lg {
+    .projects {
+        &__items {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateX(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            &__item {
+                display: inline;
+                padding-left: 20rem;
+            }
+            &__link {
+                font-size: 1rem;
+                display: inline;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    .contact__list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@include media-xl {
+    .menu-btn {
+        visibility: hidden;
+    }
+    .nav {
+        visibility: visible;
+
+        .menu-nav {
+            display: block;
+            transform: translateX(0);
+            height: 100%;
+            background: transparent;
+            text-align: center;
+            &__item {
+                display: inline;
+                padding-left: 35rem;
+            }
+            &__link {
+                font-size: 1rem;
+                display: inline;
+                padding-left: 1.5rem;
+            }
+        }
+    }
+
+    .projects__bio-image {
+        height: 50vh;
+        background-attachment: inherit;
+    }
+
+    .about {
+        &__bio {
+            p {
+                padding-left: 9rem;
+            }
+        }
+    }
+}
