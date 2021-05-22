@@ -45,7 +45,11 @@
 }
 
 @include media-lg {
+    .about {
+        margin-top: 10vh;
+    }
     .projects {
+        margin-bottom: 10vh;
         &__items {
             grid-template-columns: repeat(3, 1fr);
         }
@@ -74,7 +78,9 @@
             }
         }
     }
-
+    .contact {
+        margin-top: 20rem;
+    }
     .contact__list {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -104,6 +110,9 @@
             }
         }
     }
+    .projects {
+        margin-bottom: 0vh;
+    }
 
     .projects__bio-image {
         height: 50vh;
@@ -111,6 +120,7 @@
     }
 
     .about {
+        margin-top: 10vh;
         &__bio {
             p {
                 padding-left: 9rem;

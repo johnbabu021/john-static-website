@@ -198,6 +198,7 @@
 }
 
 .about {
+  height: 100vh;
   padding-bottom: 2rem;
 }
 
@@ -438,7 +439,8 @@
 }
 
 .contact {
-  height: 100%;
+  padding-top: 20rem;
+  height: 100vh;
   padding-top: 40vh;
   overflow: hidden;
   display: -webkit-box;
@@ -547,6 +549,9 @@
     display: inline;
     padding-left: 1.5rem;
   }
+  .contact {
+    margin-top: 20rem;
+  }
   .contact__list {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -583,6 +588,9 @@
   }
   .about__bio p {
     padding-left: 9rem;
+  }
+  .contact {
+    margin-top: 20rem;
   }
 }
 
