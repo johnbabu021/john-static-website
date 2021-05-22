@@ -20,10 +20,11 @@
         color: white;
     }
     &__bio {
-        width: 80%;
+        width: 60vw;
         text-align: center;
         .text-secondary {
             padding-bottom: 1rem;
+            padding-left:3rem;
         }
     }
     .jobs {
