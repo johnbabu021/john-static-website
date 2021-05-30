@@ -34,7 +34,13 @@ $nav-color: rgb(20, 184, 102);
 }
 
 @mixin media-xl {
-    @media screen and(min-width:1600px) {
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+
+@mixin media-sm {
+    @media screen and(max-width:768px) {
         @content;
     }
 }
