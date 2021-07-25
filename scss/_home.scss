@@ -10,6 +10,8 @@
         rgba($secondary-color,0.3)
          
     );
+  
+  
 background-size: cover;
 &-name{
     color: $text-color;
@@ -22,8 +24,9 @@ background-size: cover;
     color: $secondary-color;
     font-weight: 700;
 }
-    .bio-secondary{
-        margin-left:2vw;
-    }
+ 
 }
+}
+.home::-webkit-scrollbar{
+    display: none;
 }

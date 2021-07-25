@@ -30,7 +30,12 @@
   font-weight: 700;
 }
 
+.home::-webkit-scrollbar {
+  display: none;
+}
+
 .menu-btn {
+  width: 100vh;
   position: absolute;
   z-index: 1;
   right: 1rem;
@@ -231,12 +236,13 @@
 }
 
 .about__bio {
-  width: 80%;
+  width: 60vw;
   text-align: center;
 }
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
+  padding-left: 3rem;
 }
 
 .about .jobs {
@@ -297,6 +303,7 @@
 }
 
 .projects {
+  height: 180vh;
   padding-bottom: 2rem;
 }
 
@@ -439,7 +446,6 @@
 }
 
 .contact {
-  padding-top: 20rem;
   height: 100vh;
   padding-top: 40vh;
   overflow: hidden;
@@ -500,11 +506,6 @@
     display: inline;
     padding-left: 1.5rem;
   }
-  .about__bio {
-    margin-left: 5rem;
-    font-size: 1.5rem;
-    color: black;
-  }
   .projects__bio-image {
     height: 40vh;
   }
@@ -522,6 +523,12 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .about {
+    margin-top: 10vh;
+  }
+  .projects {
+    margin-bottom: 10vh;
+  }
   .projects__items {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
@@ -582,24 +589,32 @@
     display: inline;
     padding-left: 1.5rem;
   }
+  .projects {
+    margin-bottom: 0vh;
+  }
   .projects__bio-image {
     height: 50vh;
     background-attachment: inherit;
   }
+  .about {
+    margin-top: 10vh;
+  }
   .about__bio p {
     padding-left: 9rem;
-  }
-  .contact {
-    margin-top: 20rem;
   }
 }
 
 body {
+  scroll-behavior: smooth;
   background: #000;
   color: rgba(30, 223, 120, 0.575);
   height: 100vh;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 h1,
