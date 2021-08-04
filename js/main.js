@@ -9,6 +9,7 @@ menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
     if (!showMenu) {
+
         hamburger.classList.add('open');
         nav.classList.add('open')
         menuNav.classList.add('open')
@@ -20,6 +21,7 @@ function toggleMenu() {
 
 
     } else {
+
         hamburger.classList.remove('open');
 
         nav.classList.remove('open')
@@ -28,4 +30,4 @@ function toggleMenu() {
 
         showMenu = false;
     }
- }
+}

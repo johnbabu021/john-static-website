@@ -236,20 +236,13 @@
 }
 
 .about__bio {
-  width: 100vw;
+  width: 60vw;
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .about__bio .text-secondary {
   padding-bottom: 1rem;
   padding-left: 3rem;
-}
-.about__bio .bio-secondary{
-  width: 60vw;
-  text-align: center;
 }
 
 .about .jobs {
@@ -278,6 +271,7 @@
 }
 
 .social-icons-about {
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -420,6 +414,7 @@
 }
 
 .social-icons-about {
+  z-index: 999;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -486,6 +481,7 @@
 
 .contact .social-icons {
   position: initial;
+  z-index: 999;
   margin-top: 2rem;
 }
 
