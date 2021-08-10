@@ -7,7 +7,7 @@
   word-wrap: break-word;
 }
 :root{
-  --text-color:gray;
+  --text-color:rgba(128, 128, 128, 0.157)(128, 128, 128, 0.301)(128, 128, 128, 0.301);
   --green-color:#009688;
 }
 
@@ -194,7 +194,8 @@ background-color: var(--green-color);
 }
 .link{
   text-decoration: none;
-  color:var(--green-color)
+  font-weight:bold;
+  color:var(--green-color);
 }
 .right_sidebar>h1{
   color:var(--text-color);
