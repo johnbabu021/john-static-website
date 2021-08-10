@@ -7,7 +7,7 @@
   word-wrap: break-word;
 }
 :root{
-  --text-color:rgba(128, 128, 128, 0.157)(128, 128, 128, 0.301)(128, 128, 128, 0.301);
+  --text-color:rgb(0, 0, 0);
   --green-color:#009688;
 }
 
@@ -113,11 +113,12 @@ border-bottom: 1px solid gray;
 content:"";
 position:absolute;
 top:20px;
+left:0;
 border-radius: 20px;
 width: 80%;
 height: 10px;
 background-color: var(--text-color);
-opacity: 0.2;
+opacity: 0.1;
 }
 .skill-bar>.react::before{
   margin-left: 20px;
@@ -126,7 +127,7 @@ position:absolute;
 top:20px;
 left:0;
 border-radius: 20px;
-width: 80%;
+width: 75%;
 height: 10px;
 animation:grow linear 2s ;
 background-color: var(--green-color);
@@ -183,7 +184,6 @@ background-color: var(--green-color);
 .right_sidebar{
   width: 800px;
   height: 110vh;
-  min-height:200px;
   background-color: white;
   box-shadow: 2px 2px 4px 3px rgba(0,0,0,0.2);
   padding:0 20px;
