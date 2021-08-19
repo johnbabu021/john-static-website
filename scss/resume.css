@@ -171,6 +171,18 @@ width: 20%;
 height: 10px;
 background-color: var(--green-color);
 }
+.skill-bar>.git::before{
+  margin-left: 20px;
+content:"";
+position:absolute;
+top:20px;
+animation:grow linear 2s ;
+left:0;
+border-radius: 20px;
+width: 80%;
+height: 10px;
+background-color: var(--green-color);
+}
 
 
 
@@ -213,17 +225,29 @@ background-color: var(--green-color);
   border-bottom:1px solid gray;
 }
 
+@media (max-width:600px){
+  .grid_layer{
+    display: block;
+  } 
+  .grid{
+    display: flex;
+  }
+
+  .sidebar{
+    width:80vw !important;
+    min-width:300px !important;
+     }
+     .right_sidebar{
+       width: 80vw !important;
+     }
+}
+
 @media (max-width:1200px){
- .grid_layer{
-   display: block;
- } 
- .grid{
-   display: flex;
- }
+
  .sidebar{
-width:50vw;
+width:40vw;
  }
  .right_sidebar{
-   width: 50vw;
+   width: 40vw;
  }
 }
